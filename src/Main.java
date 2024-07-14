@@ -1,15 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import javax.swing.*;
+
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    //declarando variaveis de tipo inteiro
+    int num1, num2;
+
+    //armazenar dados nas variaveis
+    num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero 1"));
+    num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero 2"));
+
+    //laço de repetição if/else
+    if (num1 > num2){
+        System.out.println(num1 + "\n" + num2);
+    }else if (num2 > num1){
+        System.out.println(num2 + "\n" + num1);
+    }
+
     }
 }
